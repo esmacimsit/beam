@@ -1,0 +1,61 @@
+{
+  "scopeName": "source.beampy",
+  "name": "beampy",
+  "patterns": [
+    {
+      "begin": "--",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.comment.beampy" }
+      },
+      "end": "$",
+      "name": "comment.line.double-dash.beampy comment.line"
+    },
+    {
+      "match": "\\b(imp|pr|fn|rt|for|whi|cls|slf|try|exp|fin|mtc|cs)\\b",
+      "name": "keyword.control.beampy"
+    },
+    {
+      "match": "\\b(if|elf|els)\\b",
+      "name": "keyword.conditional.beampy"
+    },
+    {
+      "match": "\\b(and|or|not)\\b",
+      "name": "keyword.operator.logical.beampy"
+    },
+    {
+      "match": "\\b(True|False|None)\\b",
+      "name": "constant.language.beampy"
+    },
+    {
+      "match": "'(\\\\.|[^'])*'|\"(\\\\.|[^\"])*\"",
+      "name": "string.quoted.beampy"
+    },
+    {
+      "match": "\\b[0-9]+\\b",
+      "name": "constant.numeric.beampy"
+    },
+    {
+      "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*,)",
+      "name": "variable.other.assignment.beampy"
+    },
+    {
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\.)",
+      "name": "variable.other.object.beampy"
+    },
+    {
+      "match": "(?<=\\.)[a-zA-Z_][a-zA-Z0-9_]*\\b",
+      "name": "variable.other.property.beampy"
+    },
+    {
+      "match": "\\+|-|\\*|/|%|==|=|<|>|<=|>=",
+      "name": "keyword.operator.beampy"
+    },
+    {
+      "match": "\\[|\\]|\\{|\\}|\\(|\\)|\\.",
+      "name": "punctuation.section.beampy"
+    }
+  ],
+  "repository": {},
+  "fileTypes": ["dsl"],
+  "uuid": "b7b23b4e-7a51-4d25-ae2f-83cb0b21d74e"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "beampy",
+  "displayName": "Beampy",
+  "version": "0.0.7",
+  "publisher": "esma",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "beampy",
+        "aliases": ["Beampy", "beampy"],
+        "extensions": [".dsl"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "beampy",
+        "scopeName": "source.beampy",
+        "path": "./syntaxes/beampy.tmLanguage.json"
+      }
+    ]
+  }
+}
